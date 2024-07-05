@@ -1,0 +1,38 @@
+
+/* responsividad movil hasta 768px */
+@media (max-width:768px) {
+    main {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        
+    }
+    .formulario {
+        width: 70%;
+        margin: 10px 10%;
+        height: auto;
+    }
+    .contenedor {
+        width: 80%;
+    }
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer h2, footer p {
+        text-align: center;
+    }
+    .contenedor h1 {
+        width: 40%;
+    }
+    .producto {
+        width: 20vw;
+    }
+    .boton-enviar, .boton-limpiar {
+        transform: scale(0.9);
+    }
+    .boton-enviar:hover, .boton-limpiar:hover {
+        transform: scale(1);
+    }
+}
