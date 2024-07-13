@@ -29,6 +29,16 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	main {
+		--color: #a748f5;
+		background: linear-gradient(95deg, var(--color) 25%, transparent 25%) -50px 0,
+			  linear-gradient(-15deg, var(--color) 25%, transparent 25%) -50px 0,
+			  linear-gradient(25deg, transparent 75%, var(--color) 75%) -50px 0,
+			  linear-gradient(-45deg, transparent 75%, var(--color) 75%) -50px 0,
+			  linear-gradient(-15deg, transparent 75%, var(--color) 75%) -50px 0;
+		background-color: #b669fd;
+		background-size: 40px 40px;
+	  }
 	line-height: 1;
 }
 ol, ul {
@@ -45,4 +55,80 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+h1 {
+	font-family: Press Start 2P;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+
+}
+body {
+	display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+}
+
+.contenedor-form{
+	padding: 40px;
+	margin: 20px auto;
+	background: rgba(0,0,0,.9);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.6);
+	border-radius: 10px;
+
+	h1 {
+		margin: 0 0 30px;
+		padding: 0;
+		color: #fff;
+		text-align: center;
+		font-size: 1.5rem;
+		font-weight: bold;
+		letter-spacing: 1px;
+	  }
+	  input {
+		width: 100%;
+		padding: 10px 0;
+		font-size: 16px;
+		color: #fff;
+		margin-bottom: 30px;
+		border: none;
+		border-bottom: 1px solid #fff;
+		outline: none;
+		background: transparent;
+	  }
+	  input::placeholder {
+		padding: 10px 0;
+		font-size: 16px;
+		color: #fff;
+		pointer-events: none;
+		transition: .5s;
+	  }
+
+
+	  form {
+		 button {
+		background-color: transparent;
+		display: inline-block;
+		padding: 10px 20px;
+		font-weight: bold;
+		color: #fff;
+		font-size: 16px;
+		text-decoration: none;
+		text-transform: uppercase;
+		overflow: hidden;
+		transition: .5s;
+		margin-top: 40px;
+		letter-spacing: 3px;
+		 }
+
+		 button:hover {
+			background: #fff;
+			color: #272727;
+			border-radius: 5px;
+		  }
+  }
+
 }
