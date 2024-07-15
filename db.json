@@ -1,11 +1,16 @@
-{"productos": [{
-    "id":1,
-    "nombre":"cat",
-    "precio" :"$60,00",
-    "imagen":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg"
-}
-
-]
-
-
+{
+  "productos": [
+    {
+      "id": "2",
+      "nombre": "feliberto",
+      "precio": "80,00",
+      "imagen": "https://i.pinimg.com/564x/8c/4a/51/8c4a51e005629a084505649079b0a949.jpg"
+    },
+    {
+      "id": "379a",
+      "nombre": "Tiste",
+      "precio": "34",
+      "imagen": "https://i.pinimg.com/474x/44/87/7e/44877ebddf7774875f567d9455ded676.jpg"
+    }
+  ]
 }

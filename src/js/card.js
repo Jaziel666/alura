@@ -1,13 +1,16 @@
-function crearCard(nombre, precio, imagen, id) {
+export function crearCard(producto) {
+  const {nombre, precio, imagen, id} = producto
     return `<div class="card" id=${id}>
-                    <img src=${imagen} />
-                    <div class="card-container--info">
+                    <img class="card-imagen" src=${imagen} />
+                    <div class="card-nombre">
                       <p>${nombre}</p>
-                      <div class="card-container--value">
+                      <div class="card-precio">
                         <p>${precio}</p>
-                        <img src="" />
+                        <button data-id=${id} class="card-delete">
+                        <i class="gg-trash"></i>
+                        </button>
                       </div>
                     </div>
-                  </div>`
+                 </div>`
 }
 
